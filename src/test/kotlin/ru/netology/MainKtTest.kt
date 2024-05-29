@@ -12,14 +12,14 @@ class MainKtTest {
         val amountMonth = 600_000
         val amount = 10_000
         val result = commission(card, amountMonth, amount)
-        assertEquals("Операция заблокирована. Превышен ли", result)
+        assertEquals("Операция заблокирована. Превышен лимит.", result)
     }
 
     @Test
     fun testCommissionVkPayBlock() {
         val card: String = "VK Pay"
 
-        
+
         val amountMonth = 1_000
         val amount = 40_000
         val result = commission(card, amountMonth, amount)
